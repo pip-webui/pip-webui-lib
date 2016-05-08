@@ -1,4 +1,4 @@
-# Pip.WebUI Libraries http://git.pipdevs.com/pip-webui/pip-webui-lib
+# Pip.WebUI Libraries http://github.com/pip-webui/pip-webui-lib
 
 Standard 3rd party libraries used in Pip WebUI framework
 
@@ -92,8 +92,8 @@ Change to your project's root directory.
 
 ```bash
 # To install only 3rd party libraries.
-npm install git+ssh://git@git.pipdevs.com:pip-core/pip-webui-lib.git
+npm install git+ssh://git@github.com:pip-core/pip-webui-lib.git
 
 # To install the entire pip-webui library
-npm install git+ssh://git@git.pipdevs.com:pip-core/pip-webui.git
+npm install git+ssh://git@github.com:pip-core/pip-webui.git
 ```
