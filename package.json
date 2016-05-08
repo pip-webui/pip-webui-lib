@@ -1,0 +1,37 @@
+{
+    "name": "pip-webui-lib",
+    "version": "1.0.1",
+    "author": "Digital Living Software Corp. <www.digitallivingsoftware.com>",
+    "description": "External libraries for Pip.WebUI framework",
+    "contributors": [
+        {
+            "name": "Sergey Seroukhov",
+            "email": "seroukhov@gmail.com"
+        },
+        {
+            "name": "Mark Zontak",
+            "email": "mark@zontak.me"
+        }
+    ],
+    "keywords": [
+        "pip",
+        "webui",
+        "libraries"
+    ],
+    "noAnalyze": true,
+    "license": "Commercial",
+    "private": true,
+    "dependencies": {
+    },
+    "devDependencies": {
+        "gulp": "*",
+        "gulp-rename": "*",
+        "gulp-concat": "*",
+        "gulp-minify-css": "*",
+        "gulp-uglify": "*",
+        "gulp-sourcemaps": "*",
+        "gulp-replace": "*",
+        "gulp-merge": "*",
+        "del": "*"
+    }
+}
