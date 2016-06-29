@@ -1,18 +1,21 @@
-<a name="1.0.0"></a>
-### 1.0.0 (2015-11-20)
+# Changelog
 
-#### Features
+### 1.0.0 (2016-05-01)
+-----
+
+#### Enhancements:
+
 * **core** Core JS libraries: lodash, async, jquery
-* **angular** Angular framework including aria, animate, messages, resource, sanitize, touch 
-* **material** Angular-material controls
-* **d3** D3 data visualization library 
+* **angular** Angular framework including aria, animate, messages, resource, sanitize, touch
+* **angular-material** Angular-material controls
+* **d3** D3.js data visualization library
 * **webcamjs** Portable webcam access
 * **hammerjs** Touch gesture library (used by Angular-material)
-* **masonry** Tile visualization library   
+* **masonry** Tile visualization library
 * **test** Testing libraries like Chance.js
 
 #### Breaking Changes
-No breaking changes since the last version 
+No breaking changes since the last version
 
 #### Bug Fixes
-No fixes in this version 
+No fixes in this version

@@ -21,7 +21,9 @@
     "noAnalyze": true,
     "license": "Commercial",
     "private": true,
-    "dependencies": {
+    "scripts": {
+        "build": "gulp build",
+        "clean": "gulp clean"
     },
     "devDependencies": {
         "gulp": "*",
