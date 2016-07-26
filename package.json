@@ -1,6 +1,6 @@
 {
     "name": "pip-webui-lib",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "author": "Digital Living Software Corp. <www.digitallivingsoftware.com>",
     "description": "External libraries for Pip.WebUI framework",
     "contributors": [
@@ -19,8 +19,8 @@
         "libraries"
     ],
     "noAnalyze": true,
-    "license": "Commercial",
-    "private": true,
+    "license": "MIT",
+    "private": false,
     "scripts": {
         "build": "gulp build",
         "clean": "gulp clean"
