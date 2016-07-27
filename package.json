@@ -2,7 +2,7 @@
     "name": "pip-webui-lib",
     "version": "1.0.0",
     "author": "Digital Living Software Corp. <www.digitallivingsoftware.com>",
-    "description": "External libraries for Pip.WebUI framework",
+    "description": "Pip.WebUI bindle with 3rd party libraries",
     "contributors": [
         {
             "name": "Sergey Seroukhov",
