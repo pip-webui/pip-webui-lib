@@ -1,5 +1,7 @@
 # <img src="https://github.com/pip-webui/pip-webui/blob/master/doc/Logo.png" alt="Pip.WebUI Logo" style="max-width:30%"> <br/> 3rd party libraries bundle
 
+![](https://img.shields.io/badge/license-MIT-blue.svg)
+
 This module provides a convenient package that bundles 3rd party libraries used by Pip.WebUI framework. It greatly simplifies management of dependencies in applications and ensures that all required libraries with correct versions are included. However, it is still possible to include 3rd party libraries using other methods.
 
 3rd party libraries included into the bundle:
