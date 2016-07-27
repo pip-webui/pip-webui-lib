@@ -1,91 +1,52 @@
-# Pip.WebUI Libraries
+# <img src="https://github.com/pip-webui/pip-webui/blob/master/doc/Logo.png" alt="Pip.WebUI Logo" style="max-width:30%"> <br/> 3rd party libraries bundle
 
-This module contains a bundle of 3rd party libraries used in Pip.WebUI framework
+This module provides a convenient package that bundles 3rd party libraries used by Pip.WebUI framework. It greatly simplifies management of dependencies in applications and ensures that all required libraries with correct versions are included. However, it is still possible to include 3rd party libraries using other methods.
 
-It contains nex libraries:
-
-* Core JavaScript libraries: [lodash](https://lodash.com/), [async](https://github.com/caolan/async), [jquery](https://jquery.com/)
-* [Angular framework](https://angularjs.org/) and another packages based on Angular JS ([animate](https://github.com/angular/bower-angular-animate),
-[aria](https://github.com/angular/bower-angular-aria),
-[cookies](https://github.com/angular/bower-angular-cookies),
-[resource](https://github.com/angular/bower-angular-resource),
-[sanitize](https://github.com/angular/bower-angular-sanitize),
-[messages](https://github.com/angular/bower-angular-messages),
-[masonry](https://github.com/passy/angular-masonry),
-[angular-chart.js](https://github.com/jtblin/angular-chart.js)).
-* [Angular-Material controls](https://material.angularjs.org/latest/)
-* [D3.js](https://d3js.org/) data visualization library
-* Portable [webcam](https://github.com/jhuckaby/webcamjs) access
-* Touch gesture library (used by Angular-Material)
+3rd party libraries included into the bundle:
+* Core JavaScript libraries
+  - [lodash](https://lodash.com/): Javascript utilities
+  - [async](https://github.com/caolan/async): asynchronous programming
+  - [jquery](https://jquery.com/): DOM manipulation library
+* [Angular 1.5 framework](https://angularjs.org/): web application framework
+  - [angular-animate](https://github.com/angular/bower-angular-animate): support for CSS-based animations
+  - [angular-aria](https://github.com/angular/bower-angular-aria): support for common ARIA attributes
+  - [angular-cookies](https://github.com/angular/bower-angular-cookies): wrapper for reading and writing browser cookies
+  - [angular-resource](https://github.com/angular/bower-angular-resource): resources to call server REST APIs
+  - [angular-sanitize](https://github.com/angular/bower-angular-sanitize): functionality to sanitize HTML
+  - [angular-messages](https://github.com/angular/bower-angular-messages): enhanced support for displaying messages within templates
+* [Angular-Material controls](https://material.angularjs.org/latest/): controls to implement Google material Look&Feel
+* [Angular UI library](https://github.com/angular-ui): extensions to Angular framework
+  - [angular-ui-router](https://github.com/angular-ui/ui-router): flexible router with nested views
+  - [angular-ui-utils](https://github.com/angular-ui/ui-utils): companion suite for angular
+* Other angular libraries
+  - [angular-local-storage](https://github.com/grevory/angular-local-storage): angular service to read and write to local storage
+  - [ng-file-upload](https://github.com/danialfarid/ng-file-upload): angular directive to upload files
+  - [angular-masonry](https://github.com/passy/angular-masonry): angular wrapper for masonry to create tile views
+  - [angular-chart](https://github.com/jtblin/angular-chart.js): charting library for angular 
+* Additional libraries
+  - [D3.js](https://d3js.org/): data visualization library
+  - [webcamjs](https://github.com/jhuckaby/webcamjs): portable access to webcam
+  - [marked](https://github.com/chjj/marked): markdown parser and compiler
+  - [jquery.transit](http://ricostacruz.com/jquery.transit/): smooth CSS transitions and animations (??)
+  - [hammerjs](http://hammerjs.github.io/): support for touch gestures (used by Angular-Material ?)
+  - [bourbon](http://bourbon.io/): mixim library for SASS (??)
+  - [neat](http://neat.bourbon.io/): semantic grid framework (??)
+  - [velocity](http://velocityjs.org/): accelerated Javascript animations (??)
 * Testing libraries
+  - [chance](http://chancejs.com): random data generators
+  - [angular-mocks](https://github.com/angular/bower-angular-mocks): mocks for angular components
 
-In the version 1.0.0 the implementation was cleaned up and covered with unit tests.
-Implementation became fully portable across browser and devices.
+## Learn more about the module
 
-
-### The complete library
-
- * https://github.com/pip-webui/pip-webui
-
-## Quick links
-
-* [Module dependencies](#dependencies)
-* [Community](#community)
-* [Contributing](#contributing)
-* [License](#license)
-
+- [User's guide](doc/UsersGuide.md)
+- [Developer's guide](doc/DevelopersGuide.md)
+- [Changelog](CHANGELOG.md)
+- [Pip.WebUI project website](http://www.pipwebui.org)
 
 ## <a name="dependencies"></a>Module dependencies
 
 This module has no dependencies on another Pip.WebIU library.
 
-## <a name="community"></a>Community
-
-* Follow [@pip.webui on Twitter](http://link.com)
-* Subscribe to the [PIP.WebUI Newsletter](http://link.com)
-* Have a question that's not a feature request or bug report? Discuss on the [PIP Forum](https://groups.google.com/forum/#!forum/pipdevs)
-* Have a feature request or find a bug? [Submit an issue](http://link.com)
-* Join our Community Slack Group! [PIP Worldwide](http://link.com)
-
-
-## <a name="contributing"></a>Contributing
-
-Developers interested in contributing should read the following guidelines:
-
-* [Issue Guidelines](http://somelink.com)
-* [Contributing Guidelines](http://somelink.com)
-* [Coding guidelines](http://somelink.com)
-
-> Please do **not** ask general questions in an issue. Issues are only to report bugs, request
-  enhancements, or request new features. For general questions and discussions, use the
-  [Pip Devs Forum](https://groups.google.com/forum/#!forum/pipdevs).
-
-It is important to note that for each release, the [ChangeLog](CHANGELOG.md) is a resource that will
-itemize all:
-
-- Bug Fixes
-- New Features
-- Breaking Changes
-
-## <a name="build"></a>Build
-
-Creating vendor bundle is executed via next scripts:
-
-```bash
-# Install tools for process libraries
-npm install
-
-# Install 3rd party libraries
-bower install
-
-# Compile vendor libraries bundle
-npm run build
-
-# Clean previus compiled bundle
-npm run clean
-```
-
 ## <a name="license"></a>License
 
-PIP.WebUI is under [MIT licensed](LICENSE).
-
+This module is released under [MIT license](License) and totally free for commercial and non-commercial use.
