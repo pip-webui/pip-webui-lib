@@ -36,16 +36,50 @@ This module provides a convenient package that bundles 3rd party libraries used 
   - [chance](http://chancejs.com): random data generators
   - [angular-mocks](https://github.com/angular/bower-angular-mocks): mocks for angular components
 
+## Usage
+
+3rd party libraries are included into complete [Pip.WebUI bundle](https://github.com/pip-webui/pip-webui-all). 
+It is recommended to use it in your applications. However, if you decide to use the module directly, follow the instructions below.
+
+Add dependency to pip-webui-lib module into your **bower.json** or **package.json** file depending what you use.
+```javascript
+"dependencies": {
+  ...
+  "pip-webui-lib": "*"
+  ...
+}
+```
+
+Alternatively you can install the module manually using bower:
+```bash
+bower install pip-webui-test
+```
+
+or install it using npm:
+```bash
+npm install pip-webui-test
+```
+
+Add references to module artifacts into your web application.
+```html
+<link rel="stylesheet" href=".../pip-webui-lib.min.css"/>
+<script src=".../pip-webui-lib.min.js"></script>
+```
+
+Optionally, if you use testing libraries, add the reference below.
+```html
+<script src=".../pip-webui-lib-test.min.js"></script>
+```
+
 ## Learn more about the module
 
-- [User's guide](doc/UsersGuide.md)
 - [Developer's guide](doc/DevelopersGuide.md)
 - [Changelog](CHANGELOG.md)
 - [Pip.WebUI project website](http://www.pipwebui.org)
 
 ## <a name="dependencies"></a>Module dependencies
 
-This module has no dependencies on another Pip.WebIU library.
+This module has no dependencies to other Pip.WebUI modules.
 
 ## <a name="license"></a>License
 
