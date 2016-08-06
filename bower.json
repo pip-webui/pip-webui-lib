@@ -1,53 +1,53 @@
 {
-  "name": "pip-webui-lib",
-  "version": "1.0.0",
-  "description": "Pip.WebUI bindle with 3rd party libraries",
-  "authors": [
-    "Sergey Seroukhov <seroukhov@gmail.com>"
-  ],
-  "main": "",
-  "license": "MIT",
-  "homepage": "https://github.com/pip-webui/pip-webui-lib",
-  "dependencies": {
-    "lodash": "^4.0.0",
-    "jquery": "~2.1.3",
-    "async": "x",
-    "d3": "x",
-    "angular": "^1.5.0",
-    "angular-animate": "^1.5.0",
-    "angular-aria": "^1.5.0",
-    "angular-cookies": "^1.5.0",
-    "angular-resource": "^1.5.0",
-    "angular-sanitize": "^1.5.0",
-    "angular-messages": "^1.5.0",
-    "angular-material": "1.0.8",
-    "angular-local-storage": "x",
-    "ng-file-upload": "3.0.4",
-    "hammerjs": "~2.0.2",
-    "bourbon": "4.0.2",
-    "jquery.transit": "~0.9.12",
-    "neat": "~1.6.0",
-    "velocity": "~1.1.0",
-    "angular-ui-utils": "0.2.2",
-    "angular-ui-router": "0.2.13",
-    "marked": "x",
-    "angular-masonry": "x",
-    "angular-chart.js": "x",
-    "webcamjs": "x",
-    "chance": "x"
-  },
-  "resolutions": {
-    "angular": "1.5.5"
-  },
-  "ignore": [
-    ".gitignore",
-    "node_modules",
-    "bower_components",
-    "src",
-    "tests",
-    "samples",
-    "build.*",
-    "gulpfile.js",
-    "karma.conf.js"
-  ]
+    "name": "pip-webui-lib",
+    "version": "1.0.0",
+    "description": "Pip.WebUI bindle with 3rd party libraries",
+    "authors": [
+        "Sergey Seroukhov <seroukhov@gmail.com>"
+    ],
+    "main": "",
+    "license": "MIT",
+    "homepage": "https://github.com/pip-webui/pip-webui-lib",
+    "dependencies": {
+        "lodash": "^4.0.0",
+        "jquery": "~2.1.3",
+        "async": "x",
+        "d3": "x",
+        "angular": "^1.5.0",
+        "angular-animate": "^1.5.0",
+        "angular-aria": "^1.5.0",
+        "angular-cookies": "^1.5.0",
+        "angular-resource": "^1.5.0",
+        "angular-sanitize": "^1.5.0",
+        "angular-messages": "^1.5.0",
+        "angular-material": "1.0.8",
+        "angular-local-storage": "x",
+        "ng-file-upload": "3.0.4",
+        "hammerjs": "~2.0.2",
+        "bourbon": "4.0.2",
+        "jquery.transit": "~0.9.12",
+        "neat": "~1.6.0",
+        "velocity": "~1.1.0",
+        "angular-ui-utils": "0.2.2",
+        "angular-ui-router": "0.2.13",
+        "marked": "x",
+        "angular-masonry": "x",
+        "angular-chart.js": "x",
+        "webcamjs": "x",
+        "chance": "x"
+    },
+    "resolutions": {
+        "angular": "1.5.5"
+    },
+    "ignore": [
+        ".gitignore",
+        "node_modules",
+        "bower_components",
+        "src",
+        "tests",
+        "samples",
+        "build.*",
+        "gulpfile.js",
+        "karma.conf.js"
+    ]
 }
