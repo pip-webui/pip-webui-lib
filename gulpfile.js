@@ -48,7 +48,6 @@ gulp.task('build-js', ['build-material'], function() {
             './bower_components/angular-cookies/angular-cookies.js',
             './bower_components/angular-aria/angular-aria.js',
             './bower_components/angular-messages/angular-messages.js',
-            './bower_components/angular-mocks/angular-mocks.js',
             './bower_components/hammerjs/hammer.js',
             './bower_components/angular-ui-utils/ui-utils.js',
             './bower_components/angular-ui-router/release/angular-ui-router.js',
@@ -86,7 +85,8 @@ gulp.task('build-js-min', ['build-js'], function() {
 
 gulp.task('build-test', function() {
     return gulp.src([
-            './bower_components/chance/chance.js'
+            './bower_components/chance/chance.js',
+            './bower_components/angular-mocks/angular-mocks.js',            
         ])
         .pipe(sourceMaps.init({ loadMaps: true }))
         .pipe(concat(pkg.name + '-test.js'))
