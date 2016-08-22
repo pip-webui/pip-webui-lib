@@ -3,7 +3,8 @@
     "version": "1.0.4",
     "description": "Pip.WebUI bindle with 3rd party libraries",
     "authors": [
-        "Sergey Seroukhov <seroukhov@gmail.com>"
+        "Sergey Seroukhov <seroukhov@gmail.com>",
+        "Mark Zontak <mark@zontak.me>"
     ],
     "main": "",
     "license": "MIT",
@@ -20,7 +21,7 @@
         "angular-resource": "^1.5.0",
         "angular-sanitize": "^1.5.0",
         "angular-messages": "^1.5.0",
-        "angular-material": "1.0.8",
+        "angular-material": "1.1.0",
         "angular-mocks": "^1.5.8",
         "angular-local-storage": "x",
         "ng-file-upload": "3.0.4",
@@ -33,12 +34,13 @@
         "angular-ui-router": "0.2.13",
         "marked": "x",
         "angular-masonry": "x",
-        "angular-chart.js": "x",
+        // there is an error in 1.0.1, wait until it's fixed
+        "angular-chart.js": "1.0.0",
         "webcamjs": "x",
         "chance": "x"
     },
     "resolutions": {
-        "angular": "1.5.5"
+        "angular": "1.5.8"
     },
     "ignore": [
         ".gitignore",

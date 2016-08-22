@@ -1,5 +1,12 @@
 # Pip.WebUI.Lib Changelog
 
+## 1.0.5 (2016-08-22)
+
+#### Features:
+
+* **angular-material**: Updated to verion 1.1.0
+* **angular-chart.js**: Fixed version at 1.0.0 due to bower failure for 1.0.1
+
 ## 1.0.0 (2016-07-30)
 
 #### Features:
