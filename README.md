@@ -2,7 +2,9 @@
 
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
-This module provides a convenient package that bundles 3rd party libraries used by Pip.WebUI framework. It greatly simplifies management of dependencies in applications and ensures that all required libraries with correct versions are included. However, it is still possible to include 3rd party libraries using other methods.
+This module provides a convenient package that bundles 3rd party libraries used by Pip.WebUI framework. 
+It greatly simplifies management of dependencies in applications and ensures that all required libraries with correct versions are included. 
+However, it is still possible to include 3rd party libraries using other methods.
 
 3rd party libraries included into the bundle:
 * Core JavaScript libraries
@@ -75,8 +77,8 @@ Optionally, if you use testing libraries, add the reference below.
 
 ## Learn more about the module
 
-- [Developer's guide](doc/DevelopersGuide.md)
-- [Changelog](CHANGELOG.md)
+- [Developer's guide](https://github.com/pip-webui/pip-webui-lib/blob/master/doc/DevelopersGuide.md)
+- [Changelog](https://github.com/pip-webui/pip-webui-lib/blob/master/CHANGELOG.md)
 - [Pip.WebUI project website](http://www.pipwebui.org)
 - [Pip.WebUI project wiki](https://github.com/pip-webui/pip-webui/wiki)
 - [Pip.WebUI discussion forum](https://groups.google.com/forum/#!forum/pip-webui)
