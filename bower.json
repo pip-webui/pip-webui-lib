@@ -1,6 +1,6 @@
 {
     "name": "pip-webui-lib",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Pip.WebUI bindle with 3rd party libraries",
     "authors": [
         "Sergey Seroukhov <seroukhov@gmail.com>",
@@ -34,7 +34,6 @@
         "angular-ui-router": "0.2.13",
         "marked": "x",
         "angular-masonry": "x",
-        // there is an error in 1.0.1, wait until it's fixed
         "angular-chart.js": "1.0.0",
         "webcamjs": "x",
         "chance": "x"
