@@ -67,6 +67,7 @@ gulp.task('build-js', ['build-material'], function() {
             // Chart dependencies
             './bower_components/Chart.js/dist/Chart.js',
             './bower_components/angular-chart.js/dist/angular-chart.js',
+            './bower_components/nvd3/build/nv.d3.js',
 
             './bower_components/webcamjs/webcam.js'
         ])
@@ -104,7 +105,8 @@ gulp.task('build-test-min', ['build-js'], function() {
 gulp.task('build-css', ['build-material'], function() {
     return gulp.src([
             './build/angular-material.css',
-            './bower_components/angular-chart.js/dist/angular-chart.css'
+            './bower_components/angular-chart.js/dist/angular-chart.css',
+            './bower_components/nvd3/build/nv.d3.css'
         ])
         .pipe(concat(pkg.name + '.css'))
         .pipe(gulp.dest('./dist'));
