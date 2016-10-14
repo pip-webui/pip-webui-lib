@@ -36,8 +36,9 @@ gulp.task('build-js', ['build-material'], function() {
             './bower_components/jquery.transit/jquery.transit.js',
             './bower_components/velocity/velocity.js',
             './bower_components/pip-commons/dist/pip-commons.js',
-            //'./bower_components/d3/d3.js',// Temporary removed
+            './bower_components/d3/d3.js',
             './bower_components/marked/lib/marked.js',
+            './bower_components/moment/min/moment-with-locales.js',
 
             // Angular libraries
             './bower_components/angular/angular.js',
@@ -64,11 +65,10 @@ gulp.task('build-js', ['build-material'], function() {
             //'./bower_components/angular-packery/dist/packery.js',
 
             // Chart dependencies
-            //!!'./bower_components/Chart.js/Chart.js',// Temporary removed
-            //!!'./bower_components/angular-chart.js/dist/angular-chart.js',// Temporary removed
+            './bower_components/Chart.js/dist/Chart.js',
+            './bower_components/angular-chart.js/dist/angular-chart.js',
+
             './bower_components/webcamjs/webcam.js'
-
-
         ])
         .pipe(sourceMaps.init({ loadMaps: true }))
         .pipe(concat(pkg.name + '.js'))
