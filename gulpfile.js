@@ -10,6 +10,8 @@ var
     del = require('del'),
     pkg = require('./package.json');
 
+//---------------- Core libraries -----------------------
+
 gulp.task('build-material', function() {
     return gulp.src([
             './bower_components/angular-material/angular-material.js',
@@ -26,17 +28,13 @@ gulp.task('build-material', function() {
         .pipe(gulp.dest('build'));
 });
 
-gulp.task('build-js', ['build-material'], function() {
+gulp.task('build-core-js', ['build-material'], function() {
     return gulp.src([
             // Foundation libraries
             './bower_components/es5-shim/es5-shim.js',
             './bower_components/jquery/dist/jquery.js',
             './bower_components/lodash/lodash.js',
             './bower_components/async/dist/async.js',
-            './bower_components/jquery.transit/jquery.transit.js',
-            './bower_components/velocity/velocity.js',
-            './bower_components/pip-commons/dist/pip-commons.js',
-            './bower_components/d3/d3.js',
             './bower_components/marked/lib/marked.js',
             './bower_components/moment/min/moment-with-locales.js',
 
@@ -52,24 +50,11 @@ gulp.task('build-js', ['build-material'], function() {
             './bower_components/hammerjs/hammer.js',
             './bower_components/angular-ui-utils/ui-utils.js',
             './bower_components/angular-ui-router/release/angular-ui-router.js',
-            './bower_components/ng-file-upload/angular-file-upload-all.js',
             './build/angular-material.js',
 
             // Tile layout dependencies
             './bower_components/masonry/dist/masonry.pkgd.js',
-            './bower_components/angular-masonry/angular-masonry.js',
-
-            // Dashboard dependencies
-            //'./bower_components/packery/dist/packery.pkgd.js',
-            //'./bower_components/draggabilly/dist/draggabilly.pkgd.js',
-            //'./bower_components/angular-packery/dist/packery.js',
-
-            // Chart dependencies
-            './bower_components/Chart.js/dist/Chart.js',
-            './bower_components/angular-chart.js/dist/angular-chart.js',
-            './bower_components/nvd3/build/nv.d3.js',
-
-            './bower_components/webcamjs/webcam.js'
+            './bower_components/angular-masonry/angular-masonry.js'
         ])
         .pipe(sourceMaps.init({ loadMaps: true }))
         .pipe(concat(pkg.name + '.js'))
@@ -77,14 +62,98 @@ gulp.task('build-js', ['build-material'], function() {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build-js-min', ['build-js'], function() {        
+gulp.task('build-core-js-min', ['build-core-js'], function() {        
     return gulp.src('./dist/' + pkg.name + '.js')
         .pipe(minifyJs())
         .pipe(rename(pkg.name + '.min.js'))
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build-test', function() {
+gulp.task('build-core-css', ['build-material'], function() {
+    return gulp.src([
+            './build/angular-material.css'
+        ])
+        .pipe(concat(pkg.name + '.css'))
+        .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('build-core-css-min', ['build-core-css'], function() {
+    return gulp.src('./dist/' + pkg.name + '.css')
+        .pipe(minifyCss())
+        .pipe(rename(pkg.name + '.min.css'))
+        .pipe(gulp.dest('./dist'));
+});
+
+
+//---------------- Optional libraries -----------------------
+
+gulp.task('build-optional-js', function() {
+    return gulp.src([
+            // Animations
+            './bower_components/jquery.transit/jquery.transit.js',
+            './bower_components/velocity/velocity.js',
+
+            // Dashboard dependencies
+            //'./bower_components/packery/dist/packery.pkgd.js',
+            //'./bower_components/draggabilly/dist/draggabilly.pkgd.js',
+            //'./bower_components/angular-packery/dist/packery.js',
+
+            // Chart dependencies
+            //'./bower_components/Chart.js/dist/Chart.js',
+            //'./bower_components/angular-chart.js/dist/angular-chart.js',
+
+            // Graphics, charting
+            './bower_components/nvd3/build/nv.d3.js',
+            './bower_components/d3/d3.js',
+
+            // Images and document upload
+            './bower_components/ng-file-upload/angular-file-upload-all.js',
+            './bower_components/webcamjs/webcam.js',
+
+            // Syntax highlighter
+            './bower_components/prism/prism.js',
+            './bower_components/prism/components/prism-javascript.js',
+            './bower_components/prism/components/prism-json.js',
+            './bower_components/prism/components/prism-html.js',
+            './bower_components/prism/components/prism-css.js',
+            './bower_components/prism/components/prism-yaml.js'
+        ])
+        .pipe(sourceMaps.init({ loadMaps: true }))
+        .pipe(concat(pkg.name + '-optional.js'))
+        .pipe(sourceMaps.write('.'))
+        .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('build-optional-js-min', ['build-optional-js'], function() {        
+    return gulp.src('./dist/' + pkg.name + '-optional.js')
+        .pipe(minifyJs())
+        .pipe(rename(pkg.name + '-optional.min.js'))
+        .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('build-optional-css', function() {
+    return gulp.src([
+            //'./bower_components/angular-chart.js/dist/angular-chart.css',
+            './bower_components/nvd3/build/nv.d3.css',
+
+            // Syntax highlighter
+            './bower_components/prism/themes/prism.css'
+        ])
+        .pipe(concat(pkg.name + '-optional.css'))
+        .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('build-optional-css-min', ['build-optional-css'], function() {
+    return gulp.src('./dist/' + pkg.name + '-optional.css')
+        .pipe(minifyCss())
+        .pipe(rename(pkg.name + '-optional.min.css'))
+        .pipe(gulp.dest('./dist'));
+});
+
+
+//--------------------- Test libraries -------------------------
+
+gulp.task('build-test-js', function() {
     return gulp.src([
             './bower_components/chance/chance.js',
             './bower_components/angular-mocks/angular-mocks.js',            
@@ -95,29 +164,14 @@ gulp.task('build-test', function() {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build-test-min', ['build-js'], function() {        
+gulp.task('build-test-js-min', ['build-test-js'], function() {        
     return gulp.src('./dist/' + pkg.name + '-test.js')
         .pipe(minifyJs())
         .pipe(rename(pkg.name + '-test.min.js'))
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build-css', ['build-material'], function() {
-    return gulp.src([
-            './build/angular-material.css',
-            './bower_components/angular-chart.js/dist/angular-chart.css',
-            './bower_components/nvd3/build/nv.d3.css'
-        ])
-        .pipe(concat(pkg.name + '.css'))
-        .pipe(gulp.dest('./dist'));
-});
-
-gulp.task('build-css-min', ['build-css'], function() {
-    return gulp.src('./dist/' + pkg.name + '.css')
-        .pipe(minifyCss())
-        .pipe(rename(pkg.name + '.min.css'))
-        .pipe(gulp.dest('./dist'));
-});
+//---------------- Other tasks ------------------------
 
 gulp.task('copy-res', function() {
     return gulp.src('./bower_components/webcamjs/webcam.swf')
@@ -128,5 +182,9 @@ gulp.task('clean', function() {
     del(['./build', './dist']); 
 });
 
-gulp.task('build', [/*'build-js',*/ 'build-js-min', /*'build-css',*/ 'build-css-min', 'build-test', 'build-test-min', 'copy-res']);
+gulp.task('build', [
+    /*'build-core-js',*/ 'build-core-js-min', /*'build-core-css',*/ 'build-core-css-min', 
+    /*'build-optional-js',*/ 'build-optional-js-min', /*'build-optional-css',*/ 'build-optional-css-min', 
+    'build-test-js', 'build-test-js-min', 'copy-res'
+]);
 gulp.task('default', ['build']);
