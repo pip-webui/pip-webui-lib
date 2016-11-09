@@ -103,8 +103,8 @@ gulp.task('build-optional-js', function() {
             //'./bower_components/angular-chart.js/dist/angular-chart.js',
 
             // Graphics, charting
-            './bower_components/nvd3/build/nv.d3.js',
             './bower_components/d3/d3.js',
+            './bower_components/nvd3/build/nv.d3.js',
 
             // Images and document upload
             './bower_components/ng-file-upload/angular-file-upload-all.js',
