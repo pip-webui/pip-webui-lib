@@ -116,7 +116,11 @@ gulp.task('build-optional-js', function() {
             './bower_components/prism/components/prism-json.js',
             './bower_components/prism/components/prism-html.js',
             './bower_components/prism/components/prism-css.js',
-            './bower_components/prism/components/prism-yaml.js'
+            './bower_components/prism/components/prism-yaml.js',
+
+            // Text editor
+            './bower_components/codemirror/lib/codemirror.js',
+            './bower_components/angular-ui-codemirror/ui-codemirror.js'
         ])
         .pipe(sourceMaps.init({ loadMaps: true }))
         .pipe(concat(pkg.name + '-optional.js'))
@@ -137,7 +141,10 @@ gulp.task('build-optional-css', function() {
             './bower_components/nvd3/build/nv.d3.css',
 
             // Syntax highlighter
-            './bower_components/prism/themes/prism.css'
+            './bower_components/prism/themes/prism.css',
+
+            // Text editor
+            './bower_components/codemirror/lib/codemirror.css'
         ])
         .pipe(concat(pkg.name + '-optional.css'))
         .pipe(gulp.dest('./dist'));

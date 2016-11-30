@@ -35,8 +35,9 @@
         "webcamjs": "x",
         "d3": "x",
         "nvd3": "x",
-        "prism": "x",
         "angular-chart.js": "1.0.0",
+        "prism": "x",
+        "angular-ui-codemirror": "x",
 
         "angular-mocks": "^1.5.8",
         "chance": "x"
