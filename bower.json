@@ -25,7 +25,7 @@
         "angular-local-storage": "x",
         "hammerjs": "~2.0.2",
         "angular-ui-utils": "0.2.2",
-        "angular-ui-router": "0.2.13",
+        "angular-ui-router": "0.2.15",
         "marked": "x",
         "angular-masonry": "x",
 
