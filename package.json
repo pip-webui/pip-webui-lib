@@ -1,39 +1,39 @@
 {
-    "name": "pip-webui-lib",
-    "version": "1.5.0",
-    "author": "Digital Living Software Corp. <www.digitallivingsoftware.com>",
-    "description": "Pip.WebUI bindle with 3rd party libraries",
-    "contributors": [
-        {
-            "name": "Sergey Seroukhov",
-            "email": "seroukhov@gmail.com"
-        },
-        {
-            "name": "Mark Zontak",
-            "email": "mark@zontak.me"
-        }
-    ],
-    "keywords": [
-        "pip",
-        "webui",
-        "libraries"
-    ],
-    "noAnalyze": true,
-    "license": "MIT",
-    "private": false,
-    "scripts": {
-        "build": "gulp build",
-        "clean": "gulp clean"
-    },
-    "devDependencies": {
-        "gulp": "*",
-        "gulp-rename": "*",
-        "gulp-concat": "*",
-        "gulp-minify-css": "*",
-        "gulp-uglify": "*",
-        "gulp-sourcemaps": "*",
-        "gulp-replace": "*",
-        "gulp-merge": "*",
-        "del": "*"
-    }
+    "name":  "pip-webui-lib",
+    "version":  "1.5.0",
+    "author":  "Digital Living Software Corp. <www.digitallivingsoftware.com>",
+    "description":  "Pip.WebUI bindle with 3rd party libraries",
+    "contributors":  [
+                         {
+                             "name":  "Sergey Seroukhov",
+                             "email":  "seroukhov@gmail.com"
+                         },
+                         {
+                             "name":  "Mark Zontak",
+                             "email":  "mark@zontak.me"
+                         }
+                     ],
+    "keywords":  [
+                     "pip",
+                     "webui",
+                     "libraries"
+                 ],
+    "noAnalyze":  true,
+    "license":  "MIT",
+    "private":  false,
+    "scripts":  {
+                    "build":  "gulp build",
+                    "clean":  "gulp clean"
+                },
+    "devDependencies":  {
+                            "gulp":  "*",
+                            "gulp-rename":  "*",
+                            "gulp-concat":  "*",
+                            "gulp-minify-css":  "*",
+                            "gulp-uglify":  "*",
+                            "gulp-sourcemaps":  "*",
+                            "gulp-replace":  "*",
+                            "gulp-merge":  "*",
+                            "del":  "*"
+                        }
 }
