@@ -197,4 +197,5 @@ gulp.task('build', [
     /*'build-optional-js',*/ 'build-optional-js-min', /*'build-optional-css',*/ 'build-optional-css-min', 
     'build-test-js', 'build-test-js-min', 'copy-res'
 ]);
+gulp.task('rebuild', ['build']);
 gulp.task('default', ['build']);
