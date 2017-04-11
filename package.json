@@ -1,7 +1,7 @@
 {
     "name":  "pip-webui-lib",
-    "version":  "1.5.0",
-    "author":  "Digital Living Software Corp. <www.digitallivingsoftware.com>",
+    "version":  "2.0.2",
+    "author":  "Conceptual Vision Consulting LLC",
     "description":  "Pip.WebUI bindle with 3rd party libraries",
     "contributors":  [
                          {
