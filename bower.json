@@ -40,7 +40,7 @@
     "interact": "x",
     "angular-mocks": "1.5.8",
     "chance": "x",
-    "angular-google-maps": "2.4.1",
+    "angular-google-maps": "2.3.2",
     "angular-simple-logger": "0.1.7"
   },
   "resolutions": {
