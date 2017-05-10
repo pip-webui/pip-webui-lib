@@ -39,7 +39,9 @@
                          "angular-ui-codemirror":  "x",
                          "interact":  "x",
                          "angular-mocks":  "1.5.8",
-                         "chance":  "x"
+                         "chance":  "x",
+                         "angular-google-maps": "2.4.1",
+                         "angular-simple-logger": "0.1.7"
                      },
     "resolutions":  {
                         "angular":  "1.5.8"

@@ -123,7 +123,11 @@ gulp.task('build-optional-js', function() {
 
             // Text editor
             './bower_components/codemirror/lib/codemirror.js',
-            './bower_components/angular-ui-codemirror/ui-codemirror.js'
+            './bower_components/angular-ui-codemirror/ui-codemirror.js',
+
+            // Maps
+            './bower_components/angular-simple-logger/dist/angular-simple-logger.js',
+            './bower_components/angular-google-maps/dist/angular-google-maps.js'
         ])
         .pipe(sourceMaps.init({ loadMaps: true }))
         .pipe(concat(pkg.name + '-optional.js'))
