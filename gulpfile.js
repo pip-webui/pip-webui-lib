@@ -52,6 +52,9 @@ gulp.task('build-core-js', ['build-material'], function() {
             './bower_components/angular-ui-router/release/angular-ui-router.js',
             './build/angular-material.js',
 
+            //Additional material component
+            './bower_components/mdPickers/dist/mdPickers.js',
+
             // Tile layout dependencies
             './bower_components/masonry/dist/masonry.pkgd.js',
             './bower_components/angular-masonry/angular-masonry.js'
@@ -71,7 +74,8 @@ gulp.task('build-core-js-min', ['build-core-js'], function() {
 
 gulp.task('build-core-css', ['build-material'], function() {
     return gulp.src([
-            './build/angular-material.css'
+            './build/angular-material.css',
+            './bower_components/mdPickers/dist/mdPickers.css',
         ])
         .pipe(concat(pkg.name + '.css'))
         .pipe(gulp.dest('./dist'));

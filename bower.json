@@ -41,7 +41,8 @@
     "angular-mocks": "1.5.8",
     "chance": "x",
     "angular-google-maps": "2.3.2",
-    "angular-simple-logger": "0.1.7"
+    "angular-simple-logger": "0.1.7",
+    "mdPickers": "^0.7.5"
   },
   "resolutions": {
     "angular": "1.5.8"
