@@ -37,6 +37,8 @@ gulp.task('build-core-js', ['build-material'], function() {
             './bower_components/async/dist/async.js',
             './bower_components/marked/lib/marked.js',
             './bower_components/moment/min/moment-with-locales.js',
+            './bower_components/moment-timezone/moment-timezone.js',
+            './bower_components/moment-timezone/moment-timezone-utils.js',
 
             // Angular libraries
             './bower_components/angular/angular.js',
