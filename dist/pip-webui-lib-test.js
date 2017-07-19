@@ -1,4 +1,4 @@
-//  Chance.js 1.0.10
+//  Chance.js 1.0.9
 //  http://chancejs.com
 //  (c) 2013 Victor Quinn
 //  Chance may be freely distributed or modified under the MIT license.
@@ -19,7 +19,6 @@
     // Constructor
     function Chance (seed) {
         if (!(this instanceof Chance)) {
-            if (!seed) { seed = null; } // handle other non-truthy seeds, as described in issue #322
             return seed === null ? new Chance() : new Chance(seed);
         }
 
@@ -63,7 +62,7 @@
         return this;
     }
 
-    Chance.prototype.VERSION = "1.0.10";
+    Chance.prototype.VERSION = "1.0.9";
 
     // Random helper functions
     function initOptions(options, defaults) {
