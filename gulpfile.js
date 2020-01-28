@@ -3,7 +3,7 @@ var
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     minifyCss = require('gulp-minify-css'),
-    minifyJs = require('gulp-uglify'),
+    minifyJs = require('gulp-uglify-es').default,
     sourceMaps = require('gulp-sourcemaps'),
     replace = require('gulp-replace'),
     merge = require('gulp-merge'),
@@ -133,7 +133,10 @@ gulp.task('build-optional-js', function() {
 
             // Maps
             './bower_components/angular-simple-logger/dist/angular-simple-logger.js',
-            './bower_components/angular-google-maps/dist/angular-google-maps.js'
+            './bower_components/angular-google-maps/dist/angular-google-maps.js',
+
+            // IndexedDB wrapper for cache
+            './bower_components/dexie/dist/dexie.js'
         ])
         .pipe(sourceMaps.init({ loadMaps: true }))
         .pipe(concat(pkg.name + '-optional.js'))
