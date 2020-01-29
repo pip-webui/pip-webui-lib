@@ -136,7 +136,8 @@ gulp.task('build-optional-js', function() {
             './bower_components/angular-google-maps/dist/angular-google-maps.js',
 
             // IndexedDB wrapper for cache
-            './bower_components/dexie/dist/dexie.js'
+            './bower_components/dexie/dist/dexie.js',
+            './bower_components/object-hash/dist/object_hash.js'
         ])
         .pipe(sourceMaps.init({ loadMaps: true }))
         .pipe(concat(pkg.name + '-optional.js'))

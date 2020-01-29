@@ -38,6 +38,7 @@
     "nvd3": "x",
     "angular-chart.js": "1.0.0",
     "prism": "x",
+    "object-hash": "2.0.1",
     "angular-ui-codemirror": "x",
     "interact": "x",
     "angular-mocks": "1.5.8",

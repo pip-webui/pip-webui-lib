@@ -39,6 +39,9 @@ However, it is still possible to include 3rd party libraries using other methods
 * Testing libraries
   - [chance](http://chancejs.com): random data generators
   - [angular-mocks](https://github.com/angular/bower-angular-mocks): mocks for angular components
+* Libraries for caching
+  - [Dexie.js](https://dexie.org): A Minimalistic Wrapper for IndexedDB
+  - [object-hash](https://www.npmjs.com/package/object-hash): Generate hashes from objects and values in node and the browser
 
 ## Usage
 
